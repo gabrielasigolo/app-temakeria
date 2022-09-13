@@ -7,6 +7,7 @@ import {
   Ubuntu_700Bold
 } from '@expo-google-fonts/ubuntu'
 import { Roboto_400Regular } from '@expo-google-fonts/roboto'
+import { Produto } from './screens/Produto'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,5 +17,5 @@ export default function App() {
   if(!fontsLoaded){
     return <AppLoading />
   }
-  return (<View><Text>Exemplo</Text></View>)
+  return (<Produto />)
 }
